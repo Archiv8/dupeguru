@@ -5,18 +5,16 @@
 # repository root directory, see https://github.com/koalaman/shellcheck/wiki
 # and https://archiv8.github.io for further information.
 # shellcheck disable=SC2034,SC2154
-# ToDo: Add files: User documentation
-# ToDo: Add files: Tooling
-# FixMe: Namcap warnings and errors
+# [ToDo]: Add files: User documentation
+# [ToDo]: Add files: Tooling
+# [FixMe]: Namcap warnings and errors
 
-# Maintainer: fuan_k <rrkay at posteo dot net>
-# Contributor: Bijaya Dangol <dangoldbj23@gmail.com>
-# Contributor: Virgil Dupras <hsoft@hardcoded.net>
+# Maintainer: Ross Clark <archiv8@artisteducator.com>
 # Contributor: Ross Clark <archiv8@artisteducator.com>
 
 
 pkgname=dupeguru
-pkgver=4.2.0
+pkgver=4.2.1
 pkgrel=1
 pkgdesc="Find duplicate files with various contents, using perceptual diff for pictures"
 arch=("any")
@@ -29,6 +27,7 @@ depends=(
     "python-mutagen"
     "python-pyqt5"
     "python-send2trash"
+
     # Archiv8 on github
     "python-hsaudiotag3k"
     "python-polib"
@@ -39,7 +38,7 @@ makedepends=(
     "python-sphinx"
 )
 source=( ${pkgname}-${pkgver}.tar.gz::https://github.com/arsenetar/${pkgname}/archive/refs/tags/${pkgver}.tar.gz )
-sha512sums=("5cd25c6b71049d52b419bc72d06145078c22e4e79ebaf5e20cc817968d2cb43112d08f28bb3e6f96dbf7e7bb404188dd150039aa0393652a3044649149d5990b")
+sha512sums=("7f2a5975a61832828af788022981654b501416dfaf90b9c4294f5f809c75d07fb9503b7086170d44901aefd36591f0d7ed5d75d7f96ebe35107c383970b27408")
 provides=("dupeguru")
 conflicts=("dupeguru-git" "dupeguru-se" "dupeguru-pe" "dupeguru-me")
 
